@@ -71,7 +71,8 @@ void merge(int arr[],int l,int m,int r)
       ++j;
       ++k;
     }
-  
+  delete[] L;
+  delete[] R;
 }
 
 void merge_sort(int arr[],int l,int r)
@@ -91,8 +92,7 @@ void merge_sort(int arr[],int l,int r)
           merge_sort(arr,m+1,r);
         }
       }
-      
-      merge(arr,l,m,r);
+     merge(arr,l,m,r);
     }
 }
 
