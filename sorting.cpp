@@ -65,7 +65,7 @@ void merge(int arr[],int l,int m,int r)
       ++k;
     }
     
-    while(i<n2)
+    while(j<n2)
     {
       arr[k]=R[j];
       ++j;
