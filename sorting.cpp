@@ -65,7 +65,7 @@ void merge(int arr[],int l,int m,int r)
       ++k;
     }
     
-    while(j<n2)
+    while(i<n2)
     {
       arr[k]=R[j];
       ++j;
@@ -169,7 +169,7 @@ int main()
   duration=duration_cast<microseconds>(end-start);
   cout<<"\nParallel merge sort"<<" "<<endl;
   print(arr,n);
-  cout<<"\nTime Taken:"<<duration.count()<<endl;
+  cout<<"\nTime Taken:"<<duration.count()<<"ms\n"<<endl;
   
   
   delete[]arr;
